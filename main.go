@@ -1,0 +1,6 @@
+package a
+
+func main()
+{
+	
+}
