@@ -1,6 +1,0 @@
-package a
-
-func main()
-{
-	
-}

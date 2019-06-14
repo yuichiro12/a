@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message DirectedWeightedMultiGraph {
+    repeated Vertex vertex = 1;
+    repeated Arc arc = 2;
+}
+
+message Vertex {
+    int64 id = 1;
+    float weight = 2;
+}
+
+message Arc {
+    int64 id = 1;
+    Vertex from = 2;
+    Vertex to = 3;
+    float weight = 4;
+}
