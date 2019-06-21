@@ -1,6 +1,7 @@
 syntax = "proto3";
+package graph;
 
-service DirectedWeightedMultiGraph {
+service DirectedWeightedMultiGraphService {
     rpc Save(SaveRequest) returns (SaveResponse) {}
 }
 
