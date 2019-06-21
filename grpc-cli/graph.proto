@@ -1,5 +1,17 @@
 syntax = "proto3";
 
+service DirectedWeightedMultiGraph {
+    rpc Save(SaveRequest) returns (SaveResponse) {}
+}
+
+message SaveRequest {
+    DirectedWeightedMultiGraph digraph = 1;
+}
+
+message SaveResponse {
+    bool isSuccess = 1;
+}
+
 message DirectedWeightedMultiGraph {
     repeated Vertex vertex = 1;
     repeated Arc arc = 2;
